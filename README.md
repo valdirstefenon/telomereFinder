@@ -8,7 +8,7 @@
 [![Version](https://img.shields.io/badge/version-1.0-orange.svg)](#version-history)
 [![GUI: Tkinter](https://img.shields.io/badge/GUI-Tkinter-orange.svg)](#installation-guide)
 
-**telomereFinder** is a Python-based tool that identifies telomeric repeats in genome assemblies and relocates internal telomeric sequences (ITSs) to the correct positions at the scaffold ends. Misassemblies frequently place telomeric repeats in the middle of a scaffold instead of at its terminus; this tool detects those events and produces a cleaned, reorganized multi-FASTA.
+**telomereFinder** is a Python-based tool that identifies telomeric repeats in genome assemblies and relocates missassembled telomeric sequences to the correct positions at the scaffold ends. Misassemblies frequently place telomeric repeats in the middle of a scaffold instead of at its terminus; this tool detects those events and produces a cleaned, reorganized multi-FASTA.
 
 The tool is organism-agnostic and ships with curated presets for the major eukaryotic telomere types:
 
