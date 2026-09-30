@@ -277,13 +277,7 @@ def write_fasta(path, sequences, order, log_map):
     with open(path, 'w') as f:
         for sid in order:
             seq = sequences[sid]
-            entries = log_map.get(sid, [])
-            if entries:
-                fwd = sum(1 for e in entries if e['destination'] == 'START')
-                rev = sum(1 for e in entries if e['destination'] == 'END')
-                f.write(f">{sid} [REORGANIZED F:{fwd} R:{rev}]\n")
-            else:
-                f.write(f">{sid}\n")
+            f.write(f">{sid}\n")
             for i in range(0, len(seq), 60):
                 f.write(seq[i:i + 60] + "\n")
 
